@@ -114,7 +114,7 @@
 
    `(ido-first-match ((t (:foreground ,desert-function-fg :bold t))))
    `(ido-only-match ((t (:foreground ,desert-function-fg :bold t))))
-   `(ido-subdir ((t (:inherit minibuffer-prompt))))
+   `(ido-subdir ((t (:foreground nil :inherit minibuffer-prompt))))
 
    `(ac-candidate-face ((t (:background ,desert-mhl-bg :foreground ,desert-fg))))
    '(ac-selection-face ((t (:inherit highlight))))
