@@ -1,4 +1,4 @@
-color-theme-desert
+desert-theme
 ==================
 
 A port of a well-known VIM [theme](http://www.vim.org/scripts/script.php?script_id=105). Feel free
