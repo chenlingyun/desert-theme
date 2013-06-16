@@ -29,20 +29,20 @@
 
 ;; Please, install rainbow-mode
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let* ((desert-fg            "ghost white")
-       (desert-bg-1          "gray15")
-       (desert-bg            "gray20")
-       (desert-bg+1          "gray40")
-       (desert-bg+2          "gray60")
-       (desert-yellow-1      "yellow2")
-       (desert-yellow        "yellow")
-       (desert-khaki         "khaki")
-       (desert-olive         "OliveDrab")
-       (desert-green         "PaleGreen3")
-       (desert-blue          "LightSkyBlue3")
-       (desert-pink          "#ffa0a0")
-       (desert-red           "IndianRed3")
-       (desert-warning-fg    "goldenrod"))
+(let ((desert-fg            "ghost white")
+      (desert-bg-1          "gray15")
+      (desert-bg            "gray20")
+      (desert-bg+1          "gray40")
+      (desert-bg+2          "gray60")
+      (desert-yellow-1      "yellow2")
+      (desert-yellow        "yellow")
+      (desert-khaki         "khaki")
+      (desert-olive         "OliveDrab")
+      (desert-green         "PaleGreen3")
+      (desert-blue          "LightSkyBlue3")
+      (desert-pink          "#ffa0a0")
+      (desert-red           "IndianRed3")
+      (desert-warning-fg    "goldenrod"))
   (custom-theme-set-variables
    'desert
    '(frame-background-mode (quote dark)))
@@ -73,7 +73,7 @@
 
    `(linum ((t (:foreground ,desert-yellow :background ,desert-bg :inherit nil))))
    `(highlight ((t (:foreground ,desert-khaki :background ,desert-olive))))
-   `(region ((t (:background nil :inherit highlight))))
+   `(region ((t (:foreground ,desert-khaki :background ,desert-olive))))
    `(show-paren-mismatch ((t (:foreground ,desert-red :background ,desert-bg :bold t))))
    `(show-paren-match ((t (:foreground ,desert-fg :background "darkcyan" :bold t))))
    `(trailing-whitespace ((t (:background nil :inherit font-lock-warning-face))))
