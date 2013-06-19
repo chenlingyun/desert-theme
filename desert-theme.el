@@ -1,4 +1,4 @@
-;;; desert-theme.el ---
+;;; desert-theme.el --- A port of a well-known VIM theme.
 
 ;; Copyright (C) Sergei Lebedev
 ;;
@@ -16,7 +16,6 @@
 ;; License along with this program; if not, write to the Free
 ;; Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
 ;; MA 02111-1307 USA
-;;
 ;;
 ;; Author: Sergei Lebedev <superbobry@gmail.com>
 ;; Keywords:
@@ -56,9 +55,9 @@
    `(font-lock-comment-face ((t (:foreground ,desert-blue))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,desert-blue))))
    `(font-lock-doc-face ((t (:foreground ,desert-red))))
-   `(font-lock-keyword-face ((t (:foreground ,desert-khaki))))
+   `(font-lock-keyword-face ((t (:foreground ,desert-khaki :bold t))))
    `(font-lock-string-face ((t (:foreground ,desert-pink))))
-   `(font-lock-type-face ((t (:foreground ,desert-green :bold t))))
+   `(font-lock-type-face ((t (:foreground ,desert-green))))
    `(font-lock-variable-name-face ((t (:foreground ,desert-fg))))
    `(font-lock-warning-face ((t (:foreground ,desert-warning-fg :bold t :inherit nil))))
    `(font-lock-function-name-face ((t (:foreground ,desert-green :bold t))))
@@ -71,13 +70,16 @@
    `(mode-line-inactive ((t (:inherit mode-line))))
    `(mode-line-buffer-id ((t (:foreground ,desert-warning-fg :bold t))))
 
-   `(linum ((t (:foreground ,desert-yellow :background ,desert-bg :inherit nil))))
+   `(linum ((t (:foreground ,desert-yellow :background ,desert-bg))))
    `(highlight ((t (:foreground ,desert-khaki :background ,desert-olive))))
    `(region ((t (:foreground ,desert-khaki :background ,desert-olive))))
    `(show-paren-mismatch ((t (:foreground ,desert-red :background ,desert-bg :bold t))))
    `(show-paren-match ((t (:foreground ,desert-fg :background "darkcyan" :bold t))))
    `(trailing-whitespace ((t (:background nil :inherit font-lock-warning-face))))
    `(match ((t (:weight bold))))
+
+   ;; dired
+   `(dired-directory ((t (:foreground ,desert-khaki))))
 
    ;; link
    `(link ((t (:background ,desert-bg :foreground ,desert-red :bold t :underline nil))))
